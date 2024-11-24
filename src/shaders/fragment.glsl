@@ -29,8 +29,8 @@ void main()
     vec2 distortion = vec2(distortionStrength, distortionStrength); // Shift along x-axis
 
     // Optionally add randomness or noise for variation
-    // float noise = fract(sin(dot(vUv * uTime, vec2(12.9898,78.233))) * 43758.5453);
-    // distortion.x += (noise - 0.5) * 0.02; // Random variation
+    float noise = fract(sin(dot(vUv * uTime, vec2(12.9898,78.233))) * 43758.5453);
+    distortion.x += (noise - 0.5) * 0.02; // Random variation
 
     // Sample both textures with and without distortion
     vec4 color1 = texture2D(uPictureTexture, vUv);
