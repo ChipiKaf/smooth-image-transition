@@ -7,8 +7,6 @@ import vertexShader from './shaders/vertex.glsl';
 import fragmentShader from './shaders/fragment.glsl';
 import * as THREE from 'three'
 
-extend({ OrbitControls })
-
 export default function Experience()
 {
     const { camera, gl, size, viewport } = useThree()
