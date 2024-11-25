@@ -53,15 +53,6 @@ export default function Experience()
     })
 
     useEffect(() => {
-        let a1, a2;
-        if ( viewport.height / viewport.width < imageAspect ) {
-            a1 = 1;
-            a2 = viewport.height / viewport.width / imageAspect;
-        } else {
-            a1 = (viewport.width / viewport.height) * imageAspect;
-            a2 = 1;
-        }
-        uniforms.current.uRes.value.set(viewport.width, viewport.height, a1, a2)
         /**
          * 
          * @param { WheelEvent } event
