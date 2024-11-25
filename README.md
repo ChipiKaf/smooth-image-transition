@@ -4,10 +4,11 @@ This project showcases an interactive WebGL experience using @react-three/fiber 
 
 ## Features
 
-Smooth transitions between two images.
+- Smooth transitions between two images.
 Displacement mapping for image distortion.
 Scroll-triggered animations using gsap.
 Custom vertex and fragment shaders.
+- Scroll the mouse wheel to see the transition
 
 ## Project Structure
 
