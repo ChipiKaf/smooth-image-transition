@@ -1,3 +1,5 @@
+// NB!!! Not used. Check fragment2.glsl
+
 varying vec2 vUv;
 uniform sampler2D uPictureTexture;
 uniform sampler2D uPictureTexture2;
