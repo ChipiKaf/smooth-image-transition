@@ -1,7 +1,7 @@
 varying vec2 vUv;
 uniform sampler2D uPictureTexture;
 uniform sampler2D uPictureTexture2;
-uniform float mixValue;
+uniform float uMixValue;
 uniform float uTime; // Add uTime uniform for animation (optional)
 
 void main()
@@ -9,13 +9,13 @@ void main()
     // Define softness for the transition
     float softness = 0.1;
 
-    // Determine the sign of the softness based on mixValue
-    float signValue = mixValue > 0.99 ? -1.0 * softness : softness;
+    // Determine the sign of the softness based on uMixValue
+    float signValue = uMixValue > 0.99 ? -1.0 * softness : softness;
 
     // Calculate the local mix factor with softness
     float localMix = smoothstep(
-        (mixValue - softness),
-        (mixValue + softness),
+        (uMixValue - softness),
+        (uMixValue + softness),
         vUv.x
     );
 
