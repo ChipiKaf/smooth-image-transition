@@ -8,7 +8,7 @@ import * as THREE from 'three'
 
 export default function Experience()
 {
-    const { camera, gl, viewport } = useThree()
+    const { camera, gl } = useThree()
     const texture = useLoader(THREE.TextureLoader, './1.jpg')
     const texture2 = useLoader(THREE.TextureLoader, './2.jpg')
     const displacementTexture = useLoader(THREE.TextureLoader, './displacement/1.png');
