@@ -3,7 +3,7 @@ import gsap from 'gsap'
 import { useThree, useFrame, useLoader } from '@react-three/fiber'
 import { useEffect, useRef } from 'react'
 import vertexShader from './shaders/vertex.glsl';
-import fragmentShader from './shaders/fragment2.glsl';
+import fragmentShader from './shaders/fragment3.glsl';
 import * as THREE from 'three'
 
 export default function Experience()

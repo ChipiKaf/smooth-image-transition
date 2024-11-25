@@ -15,7 +15,7 @@ Custom vertex and fragment shaders.
 Experience.js: Main React component handling the Three.js scene and shaders.
 Shaders:
 vertex.glsl: Vertex shader for geometry manipulation.
-fragment2.glsl: Fragment shader implementing image mixing and distortion.
+fragment3.glsl: Fragment shader implementing image mixing and distortion.
 
 ## Assets:
 
@@ -47,7 +47,7 @@ This component sets up the Three.js scene using @react-three/fiber, applies text
 **vertex.glsl:**
 Basic vertex shader that passes UV coordinates to the fragment shader for further manipulation.
 
-**fragment2.glsl:** Handles mixing between two textures based on the uMixValue uniform.
+**fragment3.glsl:** Handles mixing between two textures based on the uMixValue uniform.
 Displacement mapping for distortion controlled by the uDisplacementTexture.
 Interaction
 Scroll up or down to trigger image transitions and distortion effects. The direction of the scroll determines which image appears.
@@ -62,7 +62,7 @@ Scroll up or down to trigger image transitions and distortion effects. The direc
 ├── src/
 │   ├── shaders/
 │   │   ├── vertex.glsl        # Vertex shader
-│   │   └── fragment2.glsl     # Fragment shader
+│   │   └── fragment3.glsl     # Fragment shader
 │   ├── components/
 │   │   └── Experience.js      # Main component
 │   ├── index.js               # Entry point
@@ -79,7 +79,7 @@ Scroll up or down to trigger image transitions and distortion effects. The direc
 ## How to Customize
 Change Images: Replace 1.jpg and 2.jpg in the public/ directory with your own images.
 Adjust Distortion: Modify uIntensity1, uIntensity2, uAngle1, and uAngle2 in the uniforms object.
-Experiment with Shaders: Update the fragment2.glsl and vertex.glsl files to create unique effects.
+Experiment with Shaders: Update the fragment3.glsl and vertex.glsl files to create unique effects.
 
 ## Known Issues
 Ensure all images and displacement textures are correctly linked and accessible from the public/ directory.

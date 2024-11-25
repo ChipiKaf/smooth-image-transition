@@ -1,3 +1,5 @@
+// NB!!! Not used. Check fragment3.glsl
+
 varying vec2 vUv;
 
 uniform float uMixValue;

@@ -1,4 +1,4 @@
-// NB!!! Not used. Check fragment2.glsl
+// NB!!! Not used. Check fragment3.glsl
 
 varying vec2 vUv;
 uniform sampler2D uPictureTexture;
