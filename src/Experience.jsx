@@ -1,7 +1,7 @@
 import React from 'react'
 import gsap from 'gsap'
 import { useThree, useFrame, useLoader } from '@react-three/fiber'
-import { useEffect, useMemo, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import vertexShader from './shaders/vertex.glsl';
 import fragmentShader from './shaders/fragment2.glsl';
 import * as THREE from 'three'
@@ -13,7 +13,6 @@ export default function Experience()
     const texture2 = useLoader(THREE.TextureLoader, './2.jpg')
     const displacementTexture = useLoader(THREE.TextureLoader, './displacement/1.png');
     const currentDirection = useRef(1.2);
-    const imageAspect = useMemo(() => 1.0, [])
     /**
      * @type { React.MutableRefObject<THREE.Mesh> }
      */
