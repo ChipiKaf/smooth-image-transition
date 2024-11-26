@@ -9,6 +9,10 @@ const frustumSize = 5
 const aspect = window.innerWidth / window.innerHeight
 
 root.render(
+    <>
+    <div className="text-center">
+        <h4>Scroll mouse wheel</h4>
+    </div>
     <Canvas
     orthographic
         camera={ {
@@ -26,4 +30,5 @@ root.render(
     >
         <Experience />
     </Canvas>
+    </>
 )
