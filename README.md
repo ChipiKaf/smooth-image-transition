@@ -2,6 +2,9 @@
 
 This project showcases an interactive WebGL experience using @react-three/fiber and custom GLSL shaders. It creates a smooth image transition effect with displacement mapping controlled by scroll events.
 
+## Demo
+[Live here](https://smooth-image-transition.vercel.app/)
+
 ## Features
 
 - Smooth transitions between two images.
